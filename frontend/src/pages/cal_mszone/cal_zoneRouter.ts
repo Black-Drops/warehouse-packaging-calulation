@@ -43,7 +43,6 @@ export const cal_msboxRouter = (() => {
             handleServiceResponse(ServiceResponse, res);
         }
     );
-
     // API ลบกล่องใน Zone
     router.delete("/delete/:cal_box_id", validateRequest(DeleteCal_msboxWithZoneSchema),
         async (req: Request, res: Response) => {
