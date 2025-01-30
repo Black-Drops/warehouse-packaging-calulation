@@ -5,7 +5,7 @@ import { StatusCodes } from "http-status-codes";
 import { rolesData } from "@common/models/roleData";
 
 function authAdmin(req: Request, res: Response, next: NextFunction): void {
-    if (!req.token || !req.token.payload) { //เช็คว่า req.token มีค่าหรือไม่
+    if (!req.token || !req.token.payload) { //เช็คว่า req.token มีค่าหรือไม่มี
         handleServiceResponse(
             new ServiceResponse(
                 ResponseStatus.Failed,
